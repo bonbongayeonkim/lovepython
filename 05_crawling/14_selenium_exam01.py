@@ -1,8 +1,8 @@
 from selenium import webdriver
 import time
 
-driver = webdriver. Chrome()
-driver.get('http://www.naver.com')
+driver = webdriver.Chrome()
+driver.get('https://www.naver.com')
 # driver.implicitly_wait(15)
 time.sleep(5)
 driver.get('https://google.co.kr')
@@ -16,7 +16,7 @@ time.sleep(5)
 driver.forward()
 time.sleep(5)
 driver.forward()
-# driver.fullscreen_window(5)
+# driver.fullscreen_window()
 # time.sleep(5)
 # driver.set_window_rect(100,100,800,800)
 # time.sleep(5)

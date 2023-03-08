@@ -1,8 +1,9 @@
 import urllib.request
 import json
+
 client_id = ""
 client_secret = ""
-query = input('검색할 단어 >>>')
+query = input('검색할 단어 >>> ')
 encText = urllib.parse.quote(query)
 url = "https://openapi.naver.com/v1/search/news.json?query=" + encText # JSON 결과
 # url = "https://openapi.naver.com/v1/search/blog.xml?query=" + encText # XML 결과
@@ -15,7 +16,7 @@ if(rescode==200):
     response_body = response.read()
     print(response_body.decode('utf-8'))
 else:
-    print("Error Code:" + rescode) 
+    print("Error Code:" + rescode)
 
 data = response_body.decode('utf-8')
 print(type(data))

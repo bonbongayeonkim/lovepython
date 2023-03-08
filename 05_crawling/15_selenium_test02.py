@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 driver = webdriver.Chrome()
 
 driver.get('https://www.naver.com')
-search = driver.find_element(By.ID, 'query')
+search = driver.find_element(By.ID,'query')
 time.sleep(5)
 search.send_keys('고슴도치')
 search.send_keys(Keys.ENTER)
